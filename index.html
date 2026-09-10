@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samuel Fernando | Desenvolvedor Júnior</title>
+  <meta name="description" content="Desenvolvedor Júnior em início de carreira, cursando Técnico em Desenvolvimento de Sistemas (SENAI) e com formação em Programação Web. Conheça meus projetos, tecnologias e certificações." />
+  <meta name="keywords" content="Desenvolvedor Júnior, Programador Web, SENAI, HTML, CSS, JavaScript, Flutter, Dart, Python, PHP, MySQL, Figma" />
+  <meta name="author" content="Samuel Fernando" />
+  
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Samuel Fernando | Desenvolvedor Júnior" />
+  <meta property="og:description" content="Desenvolvedor Júnior em início de carreira, cursando Técnico em Desenvolvimento de Sistemas (SENAI) e com formação em Programação Web." />
+  <meta property="og:image" content="assets/avatar.jpg" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Estilos Customizados -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2338bdf8'><path d='M8.5 4.5l-6 6 6 6M15.5 4.5l6 6-6 6'/></svg>" />
+</head>
+<body>
+  <!-- Fundo com gradiente dinâmico de partículas/mesh -->
+  <div class="bg-mesh" aria-hidden="true"></div>
+
+  <!-- Barra de Navegação Fixa -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-brand" id="brand-logo">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">Samuel</span>
+        <span class="brand-highlight">.dev</span>
+        <span class="brand-bracket">/&gt;</span>
+      </a>
+
+      <!-- Links Desktop -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Navegação Principal">
+        <a href="#inicio" class="nav-link active">Início</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#habilidades" class="nav-link">Habilidades</a>
+        <a href="#projetos" class="nav-link">Projetos</a>
+        <a href="#certificados" class="nav-link">Certificados</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+
+      <!-- Ações da Navbar -->
+      <div class="nav-actions">
+        <!-- Alternador Dark / Light Mode -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema de cores" title="Mudar tema">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Botão CV -->
+        <a href="assets/Samuel_Curriculo.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm nav-cv-btn" id="btn-cv-header">
+          <span>Currículo</span>
+        </a>
+
+        <!-- Botão Hambúrguer Mobile -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="hero-section" id="inicio">
+      <div class="container hero-container">
+        <!-- Coluna de Apresentação -->
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span class="status-text">Desenvolvedor Júnior | Cursando Técnico em Desenvolvimento de Sistemas (SENAI)</span>
+          </div>
+
+          <h1 class="hero-title">
+            Construindo soluções com <span class="gradient-text">código limpo</span> & qualidade.
+          </h1>
+
+          <div class="hero-subtitle-wrapper">
+            <span class="prefix">Foco em</span>
+            <span class="typed-text" id="typed-text"></span>
+            <span class="cursor" aria-hidden="true">|</span>
+          </div>
+
+          <p class="hero-description">
+            Desenvolvedor Júnior em início de carreira, cursando Técnico em Desenvolvimento de Sistemas (SENAI) e com formação em Programação Web. Possuo conhecimentos práticos em lógica de programação, HTML, CSS, JavaScript, e programação em Flutter em Android Studio, além de forte capacidade de resolução de problemas, trabalho em equipe e aprendizado contínuo. Busco oportunidade como Desenvolvedor Júnior para contribuir em projetos reais, entregar código limpo e de qualidade, e evoluir tecnicamente.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projetos" class="btn btn-primary" id="hero-btn-projetos">
+              <span>Explorar Projetos</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            
+            <a href="#contato" class="btn btn-secondary" id="hero-btn-contato">
+              <span>Entrar em Contato</span>
+            </a>
+
+            <a href="https://github.com/SPACEzinxl" target="_blank" rel="noopener noreferrer" class="btn btn-icon" id="hero-btn-github" title="Perfil no GitHub (SPACEzinxl)" aria-label="Ver perfil no GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/samuel-fernando-71b187258/" target="_blank" rel="noopener noreferrer" class="btn btn-icon" id="hero-btn-linkedin" title="Perfil no LinkedIn (Samuel Fernando)" aria-label="Ver perfil no LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Métricas Rápidas -->
+          <div class="hero-stats">
+            <div class="stat-card">
+              <div class="stat-value">
+                <span class="stat-num" data-target="4">0</span>
+              </div>
+              <span class="stat-label">Formações na Área</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card">
+              <div class="stat-value">
+                <span class="stat-num" data-target="8">0</span><span class="stat-plus">+</span>
+              </div>
+              <span class="stat-label">Tecnologias Dominadas</span>
+            </div>
+            <div class="stat-divider"></div>
+            <a href="#certificados" class="stat-card stat-card-link" title="Ver todos os certificados">
+              <div class="stat-value">
+                <span class="stat-num" data-target="21">0</span><span class="stat-plus">+</span>
+              </div>
+              <span class="stat-label">Certificados Concluídos</span>
+            </a>
+            <div class="stat-divider"></div>
+            <div class="stat-card">
+              <div class="stat-value">
+                <span class="stat-num" data-target="100">0</span><span class="stat-plus">%</span>
+              </div>
+              <span class="stat-label">Foco em Qualidade</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna Visual / Terminal Interativo -->
+        <div class="hero-visual">
+          <div class="profile-badge-card" id="profile-badge">
+            <div class="profile-badge-header">
+              <div class="profile-avatar">
+                <img src="assets/perfil.png" alt="Samuel Fernando" class="avatar-img" onerror="this.style.display='none'" />
+              </div>
+              <div class="profile-title-group">
+                <h3>Samuel Fernando</h3>
+                <span class="profile-role">Desenvolvedor Júnior</span>
+              </div>
+            </div>
+            
+            <div class="profile-badge-body">
+              <div class="profile-info-item">
+                <span class="info-label">🎓 Formação</span>
+                <span class="info-value">Técnico em Desenvolvimento de Sistemas</span>
+              </div>
+              <div class="profile-info-item">
+                <span class="info-label">🏫 Instituição</span>
+                <span class="info-value">SENAI</span>
+              </div>
+              <div class="profile-info-item">
+                <span class="info-label">📍 Localização</span>
+                <span class="info-value">Brasil</span>
+              </div>
+              
+              <div class="profile-skills-group">
+                <span class="info-label">💻 Principais Tecnologias</span>
+                <div class="skills-badges">
+                  <span class="badge">Flutter</span>
+                  <span class="badge">Dart</span>
+                  <span class="badge">PHP</span>
+                  <span class="badge">MySQL</span>
+                  <span class="badge">Python</span>
+                  <span class="badge">JavaScript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE MIM ===================== -->
+    <section class="section about-section" id="sobre">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Conheça mais</span>
+          <h2 class="section-title">Sobre Mim</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            Comprometido com soluções eficientes, código sustentável e arquitetura moderna de software.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Coluna com Imagem de Perfil e Badges -->
+          <div class="about-avatar-col">
+            <div class="avatar-card-wrapper">
+              <div class="avatar-image-box">
+                <img src="assets/perfil_ti.jpg" alt="Foto de Samuel no ambiente de desenvolvimento" class="avatar-img" loading="lazy" />
+                <div class="avatar-overlay"></div>
+              </div>
+              <div class="avatar-floating-card">
+                <span class="emoji">💻</span>
+                <div>
+                  <strong>Focado em Resultados</strong>
+                  <p>Código limpo e orientado ao negócio</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna com Descrição e Pilares -->
+          <div class="about-text-col">
+            <h3 class="about-lead">
+              Desenvolvedor Júnior focado em <span class="gradient-text">evolução contínua & código de qualidade</span>.
+            </h3>
+            
+            <p class="about-paragraph">
+              Desenvolvedor Júnior em início de carreira, cursando <strong>Técnico em Desenvolvimento de Sistemas (SENAI)</strong> e com formação em <strong>Programação Web</strong>. Possuo conhecimentos práticos em lógica de programação, HTML, CSS, JavaScript, e programação em Flutter em Android Studio.
+            </p>
+
+            <p class="about-paragraph">
+              Além de forte capacidade de resolução de problemas, trabalho em equipe e aprendizado contínuo, busco oportunidade como Desenvolvedor Júnior para contribuir em projetos reais, entregar código limpo e de qualidade, e evoluir tecnicamente.
+            </p>
+
+            <!-- Cards de Pilares Técnicos -->
+            <div class="pillars-grid">
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <h4>Lógica & Código Limpo</h4>
+                <p>Estruturação de algoritmos claros, manuteníveis e boas práticas de desenvolvimento.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                  </svg>
+                </div>
+                <h4>Web & Mobile (Flutter)</h4>
+                <p>Interfaces web responsivas e aplicativos em Flutter usando Android Studio.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <h4>Trabalho em Equipe</h4>
+                <p>Comunicação clara, colaboração com Git/GitHub e empatia interpessoal.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 14 14"></polyline>
+                  </svg>
+                </div>
+                <h4>Aprendizado Contínuo</h4>
+                <p>Resolução prática de problemas e dedicação constante ao aprimoramento técnico.</p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HABILIDADES & STACK ===================== -->
+    <section class="section skills-section" id="habilidades">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Competências</span>
+          <h2 class="section-title">Habilidades & Tecnologias</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            Ferramentas, linguagens e frameworks que utilizo para transformar ideias em software em produção.
+          </p>
+        </div>
+
+        <!-- Filtros de Habilidades -->
+        <div class="skills-filter-container">
+          <button class="skill-filter-btn active" data-filter="all">Todas as Stacks (9)</button>
+          <button class="skill-filter-btn" data-filter="frontend">Frontend & Web</button>
+          <button class="skill-filter-btn" data-filter="backend">Backend & Dados</button>
+          <button class="skill-filter-btn" data-filter="mobile">Mobile</button>
+          <button class="skill-filter-btn" data-filter="tools">Design & Git</button>
+        </div>
+
+        <!-- Grid de Habilidades (Somente as tecnologias do usuário) -->
+        <div class="skills-grid" id="skills-grid">
+          
+          <!-- 1. HTML5 -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap frontend-color">
+                <span>HTML</span>
+              </div>
+            </div>
+            <h4 class="skill-name">HTML5</h4>
+            <p class="skill-desc">Estruturação semântica, acessibilidade web (a11y), SEO otimizado e integração de tags modernas para interfaces ricas.</p>
+            <div class="skill-tags">
+              <span>Semântica</span>
+              <span>Acessibilidade</span>
+              <span>SEO</span>
+            </div>
+          </div>
+
+          <!-- 2. CSS3 -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap frontend-color">
+                <span>CSS</span>
+              </div>
+            </div>
+            <h4 class="skill-name">CSS3</h4>
+            <p class="skill-desc">Design responsivo profissional, Flexbox, CSS Grid, animações fluidas, variáveis nativas e microinterações modernas.</p>
+            <div class="skill-tags">
+              <span>Flexbox</span>
+              <span>CSS Grid</span>
+              <span>Responsividade</span>
+            </div>
+          </div>
+
+          <!-- 3. JavaScript -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap frontend-color">
+                <span>JS</span>
+              </div>
+            </div>
+            <h4 class="skill-name">JavaScript</h4>
+            <p class="skill-desc">ES6+, manipulação do DOM, requisições assíncronas (Fetch, Async/Await), lógica de negócios e interatividade web dinâmica.</p>
+            <div class="skill-tags">
+              <span>ES6+</span>
+              <span>Async/Await</span>
+              <span>DOM</span>
+              <span>APIs</span>
+            </div>
+          </div>
+
+          <!-- 4. PHP -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap backend-color">
+                <span>PHP</span>
+              </div>
+            </div>
+            <h4 class="skill-name">PHP</h4>
+            <p class="skill-desc">Desenvolvimento back-end estruturado, processamento seguro de formulários, sessões, integração com banco e APIs REST.</p>
+            <div class="skill-tags">
+              <span>Back-end</span>
+              <span>APIs REST</span>
+              <span>Servidor</span>
+            </div>
+          </div>
+
+          <!-- 5. Python -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap backend-color">
+                <span>PY</span>
+              </div>
+            </div>
+            <h4 class="skill-name">Python</h4>
+            <p class="skill-desc">Automação de processos em TI, scripts de produtividade, manipulação e análise de dados, lógica computacional e APIs.</p>
+            <div class="skill-tags">
+              <span>Automação</span>
+              <span>Scripts</span>
+              <span>Back-end</span>
+            </div>
+          </div>
+
+          <!-- 6. MySQL -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap db-color">
+                <span>SQL</span>
+              </div>
+            </div>
+            <h4 class="skill-name">MySQL</h4>
+            <p class="skill-desc">Modelagem relacional de bancos de dados, criação de esquemas, consultas SQL complexas, chaves estrangeiras e integridade.</p>
+            <div class="skill-tags">
+              <span>Modelagem</span>
+              <span>Queries SQL</span>
+              <span>Relacional</span>
+            </div>
+          </div>
+
+          <!-- 7. Flutter & Dart -->
+          <div class="skill-card" data-category="mobile">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap mobile-color">
+                <span>📱</span>
+              </div>
+            </div>
+            <h4 class="skill-name">Flutter & Dart</h4>
+            <p class="skill-desc">Desenvolvimento de aplicativos móveis multiplataforma (Android & iOS) em Android Studio com interfaces reativas e consumo de APIs.</p>
+            <div class="skill-tags">
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>Android Studio</span>
+              <span>Mobile</span>
+            </div>
+          </div>
+
+          <!-- 8. Figma -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap figma-color">
+                <span>🎨</span>
+              </div>
+            </div>
+            <h4 class="skill-name">Figma</h4>
+            <p class="skill-desc">Prototipagem interativa, criação de wireframes, design de interfaces (UI), testes de usabilidade e experiência do usuário (UX).</p>
+            <div class="skill-tags">
+              <span>UI/UX</span>
+              <span>Prototipagem</span>
+              <span>Design System</span>
+            </div>
+          </div>
+
+          <!-- 9. GitHub -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap devops-color">
+                <span>Git</span>
+              </div>
+            </div>
+            <h4 class="skill-name">GitHub & Git</h4>
+            <p class="skill-desc">Versionamento profissional de código, branches, Git Flow, resolução de conflitos, pull requests colaborativos e GitHub Pages.</p>
+            <div class="skill-tags">
+              <span>Git Flow</span>
+              <span>GitHub Pages</span>
+              <span>Versionamento</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJETOS EM DESTAQUE ===================== -->
+    <section class="section projects-section" id="projetos">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Portfólio Prático</span>
+          <h2 class="section-title">Projetos em Destaque</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            Aplicações reais desenvolvidas com foco em arquitetura robusta, usabilidade e alto impacto técnico.
+          </p>
+        </div>
+
+        <!-- Filtros de Categoria de Projetos -->
+        <div class="project-filter-container">
+          <button class="project-filter-btn active" data-category="all">Todos</button>
+          <button class="project-filter-btn" data-category="mobile">Mobile</button>
+          <button class="project-filter-btn" data-category="fullstack">Full Stack & Web</button>
+        </div>
+
+        <!-- Grid de Projetos -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- PROJETO 1: Pokédex Mobile -->
+          <article class="project-card" data-category="mobile" data-id="proj-1">
+            <div class="project-media">
+              <img src="projeto pokedex/tela1.png" alt="Pokédex Mobile - Tela do Treinador" class="project-img" loading="lazy" />
+              <div class="project-badge">Mobile Flutter</div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-light open-modal-btn" data-target="proj-1">Ver Detalhes</button>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span>Flutter</span>
+                <span>Dart</span>
+                <span>Android Studio</span>
+                <span>Mobile</span>
+              </div>
+              <h3 class="project-title">⚡ Pokédex Mobile & Trainer Card</h3>
+              <p class="project-summary">
+                Aplicativo mobile interativo inspirado na franquia Pokémon com Cartão de Treinador digital, galeria de insígnias e time de batalha com GIFs animados.
+              </p>
+              <div class="project-footer">
+                <a href="https://github.com/SPACEzinxl" target="_blank" rel="noopener noreferrer" class="project-link" title="Ver código no GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub</span>
+                </a>
+                <button class="btn btn-sm project-link demo-link open-modal-btn" data-target="proj-1" title="Ver demonstração">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  <span>Ver Demo</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJETO 2: PetShop 3 -->
+          <article class="project-card" data-category="fullstack" data-id="proj-2">
+            <div class="project-media">
+              <img src="assets/petshop-logo.png" alt="Sistema PetShop 3 - Dashboard" class="project-img" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#1a3a5c,#0e7490)';this.style.objectFit='contain';this.alt='PetShop 3'" />
+              <div class="project-badge">Full Stack Web</div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-light open-modal-btn" data-target="proj-2">Ver Detalhes</button>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>HTML/CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <h3 class="project-title">🐾 PetShop 3 — Sistema de Gestão</h3>
+              <p class="project-summary">
+                Sistema web completo para gestão de petshop com controle de estoque, caixa/vendas, cadastro de produtos e dashboard com indicadores em tempo real.
+              </p>
+              <div class="project-footer">
+                <a href="https://github.com/SPACEzinxl" target="_blank" rel="noopener noreferrer" class="project-link" title="Ver código no GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub</span>
+                </a>
+                <button class="btn btn-sm project-link demo-link open-modal-btn" data-target="proj-2" title="Ver detalhes">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                  <span>Detalhes</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CERTIFICADOS & FORMAÇÕES ===================== -->
+    <section class="section certificates-section" id="certificados">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Qualificações & Conquistas</span>
+          <h2 class="section-title">Certificados & Especializações</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            Cursos concluídos, formações técnicas e certificações profissionais atestando competências em desenvolvimento, inteligência artificial, cibersegurança e inovação.
+          </p>
+        </div>
+
+        <!-- Barra de Controle: Busca e Contagem -->
+        <div class="cert-toolbar">
+          <div class="cert-search-box">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="cert-search-input" class="cert-search-input" placeholder="Pesquisar por certificado, tecnologia ou palavra-chave..." aria-label="Pesquisar certificados" />
+            <button class="cert-search-clear" id="cert-search-clear" aria-label="Limpar pesquisa" title="Limpar busca" style="display: none;">&times;</button>
+          </div>
+
+          <div class="cert-stats-badge">
+            <span class="cert-stats-count" id="cert-visible-count">21</span>
+            <span class="cert-stats-label">de 21 Certificados</span>
+          </div>
+        </div>
+
+        <!-- Filtros por Categoria -->
+        <div class="cert-filter-container" id="cert-filters">
+          <button class="cert-filter-btn active" data-category="all">
+            <span>Todos</span>
+            <span class="filter-count">21</span>
+          </button>
+          <button class="cert-filter-btn" data-category="ti">
+            <span>TI & Programação</span>
+            <span class="filter-count">5</span>
+          </button>
+          <button class="cert-filter-btn" data-category="ia">
+            <span>Inteligência Artificial</span>
+            <span class="filter-count">2</span>
+          </button>
+          <button class="cert-filter-btn" data-category="seguranca">
+            <span>Cibersegurança</span>
+            <span class="filter-count">2</span>
+          </button>
+          <button class="cert-filter-btn" data-category="industria">
+            <span>Indústria 4.0 & ESG</span>
+            <span class="filter-count">5</span>
+          </button>
+          <button class="cert-filter-btn" data-category="produtividade">
+            <span>Ferramentas & Gestão</span>
+            <span class="filter-count">7</span>
+          </button>
+        </div>
+
+        <!-- Grid de Certificados -->
+        <div class="cert-grid" id="cert-grid">
+
+          <!-- 1. Técnico em Informática para Internet -->
+          <article class="cert-card" data-category="ti" data-title="Técnico em Informática para Internet" data-pdf="Certificados/T%C3%A9cnico%20em%20Inform%C3%A1tica%20para%20Internet.pdf">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrapper cert-ti-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <span class="cert-category-badge badge-ti">TI & Web</span>
+            </div>
+            <h3 class="cert-title">Técnico em Informática para Internet</h3>
+            <p class="cert-desc">Formação técnica com foco em desenvolvimento web, lógica aplicada, banco de dados, infraestrutura de redes e deploy de sistemas.</p>
+            <div class="cert-tags">
+              <span>Habilitação Técnica</span>
+              <span>Web</span>
+              <span>Sistemas</span>
+            </div>
+            <div class="cert-footer">
+              <button class="btn-cert btn-cert-preview" data-title="Técnico em Informática para Internet" data-pdf="Certificados/T%C3%A9cnico%20em%20Inform%C3%A1tica%20para%20Internet.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Visualizar</span>
+              </button>
+              <a href="Certificados/T%C3%A9cnico%20em%20Inform%C3%A1tica%20para%20Internet.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert btn-cert-link" title="Abrir PDF em nova aba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Abrir PDF</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 2. Programador de Computador Avançado -->
+          <article class="cert-card" data-category="ti" data-title="Programador de Computador Avançado" data-pdf="Certificados/Programador%20de%20Computador%20Avan%C3%A7ado.pdf">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrapper cert-ti-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+              </div>
+              <span class="cert-category-badge badge-ti">TI & Software</span>
+            </div>
+            <h3 class="cert-title">Programador de Computador Avançado</h3>
+            <p class="cert-desc">Algoritmos avançados, estruturas de dados otimizadas, modularização de código, orientação a objetos e engenharia de software.</p>
+            <div class="cert-tags">
+              <span>Algoritmos</span>
+              <span>Engenharia</span>
+              <span>Avançado</span>
+            </div>
+            <div class="cert-footer">
+              <button class="btn-cert btn-cert-preview" data-title="Programador de Computador Avançado" data-pdf="Certificados/Programador%20de%20Computador%20Avan%C3%A7ado.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Visualizar</span>
+              </button>
+              <a href="Certificados/Programador%20de%20Computador%20Avan%C3%A7ado.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert btn-cert-link" title="Abrir PDF em nova aba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Abrir PDF</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 3. Programador Web -->
+          <article class="cert-card" data-category="ti" data-title="Programador Web" data-pdf="Certificados/Programador%20Web.pdf">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrapper cert-ti-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              </div>
+              <span class="cert-category-badge badge-ti">Desenvolvimento Web</span>
+            </div>
+            <h3 class="cert-title">Programador Web</h3>
+            <p class="cert-desc">Criação de páginas dinâmicas, semântica web, estilização moderna, JavaScript assíncrono e conexão com serviços back-end.</p>
+            <div class="cert-tags">
+              <span>Full Stack</span>
+              <span>JavaScript</span>
+              <span>Web Standards</span>
+            </div>
+            <div class="cert-footer">
+              <button class="btn-cert btn-cert-preview" data-title="Programador Web" data-pdf="Certificados/Programador%20Web.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Visualizar</span>
+              </button>
+              <a href="Certificados/Programador%20Web.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert btn-cert-link" title="Abrir PDF em nova aba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Abrir PDF</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 4. Auxiliar de Informática para Internet -->
+          <article class="cert-card" data-category="ti" data-title="Auxiliar de Informática para Internet" data-pdf="Certificados/Auxiliar%20de%20Inform%C3%A1tica%20para%20Internet.pdf">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrapper cert-ti-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <span class="cert-category-badge badge-ti">TI & Internet</span>
+            </div>
+            <h3 class="cert-title">Auxiliar de Informática para Internet</h3>
+            <p class="cert-desc">Rotinas operacionais de TI, configuração de ambientes, protocolos de comunicação, navegadores e utilitários web.</p>
+            <div class="cert-tags">
+              <span>Infraestrutura</span>
+              <span>Suporte</span>
+              <span>Redes</span>
+            </div>
+            <div class="cert-footer">
+              <button class="btn-cert btn-cert-preview" data-title="Auxiliar de Informática para Internet" data-pdf="Certificados/Auxiliar%20de%20Inform%C3%A1tica%20para%20Internet.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Visualizar</span>
+              </button>
+              <a href="Certificados/Auxiliar%20de%20Inform%C3%A1tica%20para%20Internet.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert btn-cert-link" title="Abrir PDF em nova aba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Abrir PDF</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 5. Informática Essencial -->
+          <article class="cert-card" data-category="ti" data-title="Informática Essencial" data-pdf="Certificados/Inform%C3%A1tica%20Essencial.pdf">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrapper cert-ti-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+              </div>
+              <span class="cert-category-badge badge-ti">Fundamentos</span>
+            </div>
+            <h3 class="cert-title">Informática Essencial</h3>
+            <p class="cert-desc">Conceitos fundamentais da computação, estrutura operacional de computadores, gerenciamento de arquivos e segurança de usuário.</p>
+            <div class="cert-tags">
+              <span>Fundamentos TI</span>
+              <span>Sistemas</span>
+              <span>Hardware & SO</span>
+            </div>
+            <div class="cert-footer">
+              <button class="btn-cert btn-cert-preview" data-title="Informática Essencial" data-pdf="Certificados/Inform%C3%A1tica%20Essencial.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Visualizar</span>
+              </button>
+              <a href="Certificados/Inform%C3%A1tica%20Essencial.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert btn-cert-link" title="Abrir PDF em nova aba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Abrir PDF</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 6. Fluência - Fundamentos da Inteligência Artificial -->
+          <article class="cert-card" data-category="ia" data-title="Fluência em Fundamentos da Inteligência Artificial" data-pdf="Certificados/Certificado_FLU%C3%8ANCIA%20-%20FUNDAMENTOS%20DA%20INTELIG%C3%8ANCIA%20ARTIFICIA.pdf">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrapper cert-ia-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path></svg>
+              </div>
+              <span class="cert-category-badge badge-ia">Inteligência Artificial</span>
+            </div>
+            <h3 class="cert-title">Fluência em Fundamentos da Inteligência Artificial</h3>
+            <p class="cert-desc">Conceitos essenciais de IA, modelos generativos, redes neurais, machine learning e integração de soluções inteligentes.</p>
+            <div class="cert-tags">
+              <span>IA Generativa</span>
+              <span>Machine Learning</span>
+              <span>Automação</span>
+            </div>
+            <div class="cert-footer">
+              <button class="btn-cert btn-cert-preview" data-title="Fluência em Fundamentos da Inteligência Artificial" data-pdf="Certificados/Certificado_FLU%C3%8ANCIA%20-%20FUNDAMENTOS%20DA%20INTELIG%C3%8ANCIA%20ARTIFICIA.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Visualizar</span>
+              </button>
+              <a href="Certificados/Certificado_FLU%C3%8ANCIA%20-%20FUNDAMENTOS%20DA%20INTELIG%C3%8ANCIA%20ARTIFICIA.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert btn-cert-link" title="Abrir PDF em nova aba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Abrir PDF</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 7. Ética na Inteligência Artificial -->
+          <article class="cert-card" data-category="ia" data-title="Ética na Inteligência Artificial" data-pdf="Certificados/Certificado_%C3%89tica%20na%20Intelig%C3%AAncia%20Artificia.pdf">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrapper cert-ia-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <span class="cert-category-badge badge-ia">Governança & IA</span>
+            </div>
+            <h3 class="cert-title">Ética na Inteligência Artificial</h3>
+            <p class="cert-desc">Diretrizes éticas para algoritmos, viés de dados, privacidade, responsabilidade social e transparência em sistemas automatizados.</p>
+            <div class="cert-tags">
+              <span>Ética</span>
+              <span>Governança</span>
+              <span>Transparência</span>
+            </div>
+            <div class="cert-footer">
+              <button class="btn-cert btn-cert-preview" data-title="Ética na Inteligência Artificial" data-pdf="Certificados/Certificado_%C3%89tica%20na%20Intelig%C3%AAncia%20Artificia.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Visualizar</span>
+              </button>
+              <a href="Certificados/Certificado_%C3%89tica%20na%20Intelig%C3%AAncia%20Artificia.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert btn-cert-link" title="Abrir PDF em nova aba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Abrir PDF</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 8. Por dentro da Segurança Cibernética -->
+          <article class="cert-card" data-category="seguranca" data-title="Por dentro da Segurança Cibernética" data-pdf="Certificados/Certificado_Por%20dentro%20da%20Seguran%C3%A7a%20Cibern%C3%A9tic.pdf">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrapper cert-sec-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              </div>
+              <span class="cert-category-badge badge-sec">Cibersegurança</span>
+            </div>
+            <h3 class="cert-title">Por Dentro da Segurança Cibernética</h3>
+            <p class="cert-desc">Vetores de ataque, engenharia social, proteção de ativos digitais, criptografia e mitigação de vulnerabilidades em redes.</p>
+            <div class="cert-tags">
+              <span>Cybersecurity</span>
+              <span>Defesa Digital</span>
+              <span>Proteção</span>
+            </div>
+            <div class="cert-footer">
+              <button class="btn-cert btn-cert-preview" data-title="Por Dentro da Segurança Cibernética" data-pdf="Certificados/Certificado_Por%20dentro%20da%20Seguran%C3%A7a%20Cibern%C3%A9tic.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Visualizar</span>
+              </button>
+              <a href="Certificados/Certificado_Por%20dentro%20da%20Seguran%C3%A7a%20Cibern%C3%A9tic.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert btn-cert-link" title="Abrir PDF em nova aba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Abrir PDF</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 9. Cidadania Digital e uso Consciente da Internet -->
+          <article class="cert-card" data-category="seguranca" data-title="Cidadania Digital e Uso Consciente da Internet" data-pdf="Certificados/Certificado_Cidadania%20Digital%20e%20uso%20Consciente%20da%20Interne.pdf">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrapper cert-sec-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <span class="cert-category-badge badge-sec">Cultura Digital</span>
+            </div>
+            <h3 class="cert-title">Cidadania Digital e Uso Consciente da Internet</h3>
+            <p class="cert-desc">Proteção de privacidade do internauta, pegada digital, direitos autorais na web, segurança da informação e convivência online.</p>
+            <div class="cert-tags">
+              <span>Privacidade</span>
+              <span>Segurança</span>
+              <span>Cidadania</span>
+            </div>
+            <div class="cert-footer">
+              <button class="btn-cert btn-cert-preview" data-title="Cidadania Digital e Uso Consciente da Internet" data-pdf="Certificados/Certificado_Cidadania%20Digital%20e%20uso%20Consciente%20da%20Interne.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Visualizar</span>
+              </button>
+              <a href="Certificados/Certificado_Cidadania%20Digital%20e%20uso%20Consciente%20da%20Interne.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert btn-cert-link" title="Abrir PDF em nova aba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Abrir PDF</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 10. Desvendando a Indústria 4.0 -->
+          <article class="cert-card" data-category="industria" data-title="Desvendando a Indústria 4.0" data-pdf="Certificados/Certificado_Desvendando%20a%20Ind%C3%BAstria%204.pdf">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrapper cert-ind-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              </div>
+              <span class="cert-category-badge badge-ind">Indústria 4.0</span>
+            </div>
+            <h3 class="cert-title">Desvendando a Indústria 4.0</h3>
+            <p class="cert-desc">Internet das Coisas (IoT), computação em nuvem, integração de sistemas ciberfísicos, big data e automação de processos industriais.</p>
+            <div class="cert-tags">
+              <span>IoT</span>
+              <span>Automação</span>
+              <span>Transformação Digital</span>
+            </div>
+            <div class="cert-footer">
+              <button class="btn-cert btn-cert-preview" data-title="Desvendando a Indústria 4.0" data-pdf="Certificados/Certificado_Desvendando%20a%20Ind%C3%BAstria%204.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Visualizar</span>
+              </button>
+              <a href="Certificados/Certificado_Desvendando%20a%20Ind%C3%BAstria%204.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert btn-cert-link" title="Abrir PDF em nova aba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Abrir PDF</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 11. Desvendando o ESG -->
+          <article class="cert-card" data-category="industria" data-title="Desvendando o ESG (Ambiental, Social e Governança)" data-pdf="Certificados/Certificado_Desvendando%20o%20ES.pdf">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrapper cert-ind-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <span class="cert-category-badge badge-ind">ESG & Sustentabilidade</span>
+            </div>
+            <h3 class="cert-title">Desvendando o ESG</h3>
+            <p class="cert-desc">Práticas ambientais, responsabilidade social corporativa e governança ética nos ecossistemas empresariais modernos.</p>
+            <div class="cert-tags">
+              <span>ESG</span>
+              <span>Sustentabilidade</span>
+              <span>Governança</span>
+            </div>
+            <div class="cert-footer">
+              <button class="btn-cert btn-cert-preview" data-title="Desvendando o ESG" data-pdf="Certificados/Certificado_Desvendando%20o%20ES.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Visualizar</span>
+              </button>
+              <a href="Certificados/Certificado_Desvendando%20o%20ES.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert btn-cert-link" title="Abrir PDF em nova aba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Abrir PDF</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 12. Desvendando a Descarbonização -->
+          <article class="cert-card" data-category="industria" data-title="Desvendando a Descarbonização" data-pdf="Certificados/Certificado_Desvendando%20a%20Descarboniza%C3%A7%C3%A3.pdf">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrapper cert-ind-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path></svg>
+              </div>
+              <span class="cert-category-badge badge-ind">Clima & Energia</span>
+            </div>
+            <h3 class="cert-title">Desvendando a Descarbonização</h3>
+            <p class="cert-desc">Mapeamento de emissões de gases de efeito estufa, matrizes energéticas limpas, crédito de carbono e transição energética sustentável.</p>
+            <div class="cert-tags">
+              <span>Energia Limpa</span>
+              <span>Descarbonização</span>
+              <span>Eco-eficiência</span>
+            </div>
+            <div class="cert-footer">
+              <button class="btn-cert btn-cert-preview" data-title="Desvendando a Descarbonização" data-pdf="Certificados/Certificado_Desvendando%20a%20Descarboniza%C3%A7%C3%A3.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Visualizar</span>
+              </button>
+              <a href="Certificados/Certificado_Desvendando%20a%20Descarboniza%C3%A7%C3%A3.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert btn-cert-link" title="Abrir PDF em nova aba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Abrir PDF</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 13. Geração de Valor Circular e Modelos de Negócio -->
+          <article class="cert-card" data-category="industria" data-title="Geração de Valor Circular e Modelos de Negócio" data-pdf="Certificados/Certificado_GERA%C3%87%C3%83O%20DE%20VALOR%20CIRCULAR%20E%20MODELOS%20DE%20NEG%C3%93CIO.pdf">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrapper cert-ind-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+              </div>
+              <span class="cert-category-badge badge-ind">Economia Circular</span>
+            </div>
+            <h3 class="cert-title">Geração de Valor Circular e Modelos de Negócio</h3>
+            <p class="cert-desc">Ciclo de vida sustentável de produtos, redução de resíduos, reutilização inteligente de materiais e criação de valor econômico circular.</p>
+            <div class="cert-tags">
+              <span>Valor Circular</span>
+              <span>Modelos de Negócio</span>
+              <span>Inovação</span>
+            </div>
+            <div class="cert-footer">
+              <button class="btn-cert btn-cert-preview" data-title="Geração de Valor Circular e Modelos de Negócio" data-pdf="Certificados/Certificado_GERA%C3%87%C3%83O%20DE%20VALOR%20CIRCULAR%20E%20MODELOS%20DE%20NEG%C3%93CIO.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Visualizar</span>
+              </button>
+              <a href="Certificados/Certificado_GERA%C3%87%C3%83O%20DE%20VALOR%20CIRCULAR%20E%20MODELOS%20DE%20NEG%C3%93CIO.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert btn-cert-link" title="Abrir PDF em nova aba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Abrir PDF</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 14. Inovação e Empreendedorismo -->
+          <article class="cert-card" data-category="industria" data-title="Inovação e Empreendedorismo" data-pdf="Certificados/Inova%C3%A7%C3%A3o%20e%20Empreendorismo.pdf">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrapper cert-ind-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+              </div>
+              <span class="cert-category-badge badge-ind">Empreendedorismo</span>
+            </div>
+            <h3 class="cert-title">Inovação e Empreendedorismo</h3>
+            <p class="cert-desc">Design Thinking, ideação ágil, validação de hipóteses de negócio, proposta de valor e mentalidade inovadora.</p>
+            <div class="cert-tags">
+              <span>Ideação</span>
+              <span>Modelagem Ágil</span>
+              <span>Soluções</span>
+            </div>
+            <div class="cert-footer">
+              <button class="btn-cert btn-cert-preview" data-title="Inovação e Empreendedorismo" data-pdf="Certificados/Inova%C3%A7%C3%A3o%20e%20Empreendorismo.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Visualizar</span>
+              </button>
+              <a href="Certificados/Inova%C3%A7%C3%A3o%20e%20Empreendorismo.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert btn-cert-link" title="Abrir PDF em nova aba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Abrir PDF</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 15. Microsoft Excel 2016 - Básico -->
+          <article class="cert-card" data-category="produtividade" data-title="Microsoft Excel 2016 - Básico" data-pdf="Certificados/Microsoft%20Excel%202016%20-%20B%C3%A1sico.pdf">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrapper cert-prod-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="8" y1="13" x2="16" y2="13"></line><line x1="8" y1="17" x2="16" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              </div>
+              <span class="cert-category-badge badge-prod">Microsoft Office</span>
+            </div>
+            <h3 class="cert-title">Microsoft Excel 2016 - Básico</h3>
+            <p class="cert-desc">Criação e edição de planilhas eletrônicas, fórmulas essenciais, formatação condicional, operadores e gráficos estatísticos.</p>
+            <div class="cert-tags">
+              <span>Excel</span>
+              <span>Planilhas</span>
+              <span>Análise</span>
+            </div>
+            <div class="cert-footer">
+              <button class="btn-cert btn-cert-preview" data-title="Microsoft Excel 2016 - Básico" data-pdf="Certificados/Microsoft%20Excel%202016%20-%20B%C3%A1sico.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Visualizar</span>
+              </button>
+              <a href="Certificados/Microsoft%20Excel%202016%20-%20B%C3%A1sico.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert btn-cert-link" title="Abrir PDF em nova aba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Abrir PDF</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 16. Certificado Excel Básico -->
+          <article class="cert-card" data-category="produtividade" data-title="Certificado Excel Básico" data-pdf="Certificados/Certificado_Excel%20B%C3%A1sic.pdf">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrapper cert-prod-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line></svg>
+              </div>
+              <span class="cert-category-badge badge-prod">Produtividade</span>
+            </div>
+            <h3 class="cert-title">Excel Básico</h3>
+            <p class="cert-desc">Competência técnica no manuseio de dados tabulares, funções lógicas, cálculos automatizados e estruturação de tabelas corporativas.</p>
+            <div class="cert-tags">
+              <span>Dados</span>
+              <span>Automação</span>
+              <span>Tabelas</span>
+            </div>
+            <div class="cert-footer">
+              <button class="btn-cert btn-cert-preview" data-title="Excel Básico" data-pdf="Certificados/Certificado_Excel%20B%C3%A1sic.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Visualizar</span>
+              </button>
+              <a href="Certificados/Certificado_Excel%20B%C3%A1sic.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert btn-cert-link" title="Abrir PDF em nova aba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Abrir PDF</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 17. Microsoft Word 2016 - Básico -->
+          <article class="cert-card" data-category="produtividade" data-title="Microsoft Word 2016 - Básico" data-pdf="Certificados/Microsoft%20Word%202016%20-%20B%C3%A1sico.pdf">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrapper cert-prod-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              </div>
+              <span class="cert-category-badge badge-prod">Microsoft Office</span>
+            </div>
+            <h3 class="cert-title">Microsoft Word 2016 - Básico</h3>
+            <p class="cert-desc">Formatação de textos conforme normas técnicas, diagramação de relatórios, estilos de parágrafo, tabelas e sumários automáticos.</p>
+            <div class="cert-tags">
+              <span>Word</span>
+              <span>Documentação</span>
+              <span>Editoração</span>
+            </div>
+            <div class="cert-footer">
+              <button class="btn-cert btn-cert-preview" data-title="Microsoft Word 2016 - Básico" data-pdf="Certificados/Microsoft%20Word%202016%20-%20B%C3%A1sico.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Visualizar</span>
+              </button>
+              <a href="Certificados/Microsoft%20Word%202016%20-%20B%C3%A1sico.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert btn-cert-link" title="Abrir PDF em nova aba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Abrir PDF</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 18. Microsoft PowerPoint 2016 - Básico -->
+          <article class="cert-card" data-category="produtividade" data-title="Microsoft PowerPoint 2016 - Básico" data-pdf="Certificados/Microsoft%20POWERPOINT%202016%20-%20B%C3%A1sico.pdf">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrapper cert-prod-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </div>
+              <span class="cert-category-badge badge-prod">Apresentações</span>
+            </div>
+            <h3 class="cert-title">Microsoft PowerPoint 2016 - Básico</h3>
+            <p class="cert-desc">Design e estruturação visual de apresentações executivas, recursos audiovisuais, animações funcionais e storytelling corporativo.</p>
+            <div class="cert-tags">
+              <span>PowerPoint</span>
+              <span>Apresentações</span>
+              <span>Visual</span>
+            </div>
+            <div class="cert-footer">
+              <button class="btn-cert btn-cert-preview" data-title="Microsoft PowerPoint 2016 - Básico" data-pdf="Certificados/Microsoft%20POWERPOINT%202016%20-%20B%C3%A1sico.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Visualizar</span>
+              </button>
+              <a href="Certificados/Microsoft%20POWERPOINT%202016%20-%20B%C3%A1sico.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert btn-cert-link" title="Abrir PDF em nova aba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Abrir PDF</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 19. Atendimento ao Público -->
+          <article class="cert-card" data-category="produtividade" data-title="Atendimento ao Público" data-pdf="Certificados/Atendimento%20ao%20P%C3%BAblico.pdf">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrapper cert-prod-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+              </div>
+              <span class="cert-category-badge badge-prod">Soft Skills</span>
+            </div>
+            <h3 class="cert-title">Atendimento ao Público</h3>
+            <p class="cert-desc">Comunicação empática, resolução ágil de conflitos, escuta ativa, inteligência relacional e excelência em relacionamento com o cliente.</p>
+            <div class="cert-tags">
+              <span>Comunicação</span>
+              <span>Relacionamento</span>
+              <span>Soft Skills</span>
+            </div>
+            <div class="cert-footer">
+              <button class="btn-cert btn-cert-preview" data-title="Atendimento ao Público" data-pdf="Certificados/Atendimento%20ao%20P%C3%BAblico.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Visualizar</span>
+              </button>
+              <a href="Certificados/Atendimento%20ao%20P%C3%BAblico.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert btn-cert-link" title="Abrir PDF em nova aba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Abrir PDF</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 20. Competência Transversal - Segurança no Trabalho -->
+          <article class="cert-card" data-category="produtividade" data-title="Competência Transversal - Segurança no Trabalho" data-pdf="Certificados/Certificado_Compet%C3%AAncia%20Transversal%20-%20Seguran%C3%A7a%20no%20Trabalh.pdf">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrapper cert-prod-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+              </div>
+              <span class="cert-category-badge badge-prod">Saúde & Segurança</span>
+            </div>
+            <h3 class="cert-title">Competência Transversal - Segurança no Trabalho</h3>
+            <p class="cert-desc">Normas de segurança, identificação de riscos operacionais, prevenção de acidentes de trabalho e ergonomia ocupacional.</p>
+            <div class="cert-tags">
+              <span>Normas</span>
+              <span>Prevenção</span>
+              <span>Ergonomia</span>
+            </div>
+            <div class="cert-footer">
+              <button class="btn-cert btn-cert-preview" data-title="Competência Transversal - Segurança no Trabalho" data-pdf="Certificados/Certificado_Compet%C3%AAncia%20Transversal%20-%20Seguran%C3%A7a%20no%20Trabalh.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Visualizar</span>
+              </button>
+              <a href="Certificados/Certificado_Compet%C3%AAncia%20Transversal%20-%20Seguran%C3%A7a%20no%20Trabalh.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert btn-cert-link" title="Abrir PDF em nova aba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Abrir PDF</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 21. Inglês -->
+          <article class="cert-card" data-category="produtividade" data-title="Inglês" data-pdf="Certificados/Ingl%C3%AAs.pdf">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrapper cert-prod-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              </div>
+              <span class="cert-category-badge badge-prod">Idiomas</span>
+            </div>
+            <h3 class="cert-title">Inglês Instrumental & Comunicação</h3>
+            <p class="cert-desc">Vocabulário técnico para literatura de tecnologia, documentações de APIs, terminologia de software e comunicação essencial.</p>
+            <div class="cert-tags">
+              <span>Inglês Técnico</span>
+              <span>Idiomas</span>
+              <span>TI Global</span>
+            </div>
+            <div class="cert-footer">
+              <button class="btn-cert btn-cert-preview" data-title="Inglês Instrumental & Comunicação" data-pdf="Certificados/Ingl%C3%AAs.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Visualizar</span>
+              </button>
+              <a href="Certificados/Ingl%C3%AAs.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert btn-cert-link" title="Abrir PDF em nova aba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Abrir PDF</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Estado Vazio para Busca sem Resultados -->
+        <div class="cert-empty-state" id="cert-empty-state" style="display: none;">
+          <div class="cert-empty-icon">🔍</div>
+          <h4 class="cert-empty-title">Nenhum certificado encontrado</h4>
+          <p class="cert-empty-desc">Tente utilizar outros termos ou clique em "Todos" para redefinir os filtros.</p>
+          <button class="btn btn-outline btn-sm" id="btn-reset-cert-filters">Redefinir Filtros</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== CONTATO & REDES ===================== -->
+    <section class="section contact-section" id="contato">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Conexão Direta</span>
+          <h2 class="section-title">Informações de Contato</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            Estou disponível para oportunidades profissionais, desenvolvimento de projetos e parcerias em tecnologia. Conecte-se comigo por um dos canais diretos abaixo:
+          </p>
+        </div>
+
+        <div class="contact-channels-wrapper">
+          <div class="contact-cards-grid">
+            
+            <!-- E-mail -->
+            <a href="mailto:samuelfernandoa98125760@gmail.com" class="contact-channel-card" id="contact-email">
+              <div class="contact-channel-top">
+                <div class="contact-channel-icon email-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <span class="contact-channel-badge">E-mail Principal</span>
+              </div>
+              <h3 class="contact-channel-title">E-mail Profissional</h3>
+              <p class="contact-channel-desc">Envie propostas, mensagens e convites para oportunidades técnicas.</p>
+              <div class="contact-channel-val">samuelfernandoa98125760@gmail.com</div>
+              <div class="contact-channel-action">
+                <span>Enviar E-mail</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </div>
+            </a>
+
+            <!-- WhatsApp / Telefone -->
+            <a href="https://wa.me/5511981725760" target="_blank" rel="noopener noreferrer" class="contact-channel-card" id="contact-whatsapp">
+              <div class="contact-channel-top">
+                <div class="contact-channel-icon whatsapp-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                </div>
+                <span class="contact-channel-badge badge-fast">Resposta Rápida</span>
+              </div>
+              <h3 class="contact-channel-title">WhatsApp / Telefone</h3>
+              <p class="contact-channel-desc">Contato imediato via mensagem no WhatsApp ou ligação telefônica direta.</p>
+              <div class="contact-channel-val">(11) 98172-5760</div>
+              <div class="contact-channel-action">
+                <span>Chamar no WhatsApp</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </div>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/samuel-fernando-71b187258/" target="_blank" rel="noopener noreferrer" class="contact-channel-card" id="contact-linkedin">
+              <div class="contact-channel-top">
+                <div class="contact-channel-icon linkedin-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </div>
+                <span class="contact-channel-badge badge-pro">Networking</span>
+              </div>
+              <h3 class="contact-channel-title">LinkedIn</h3>
+              <p class="contact-channel-desc">Conexões profissionais, atualizações de carreira e recomendações.</p>
+              <div class="contact-channel-val">in/samuel-fernando-71b187258</div>
+              <div class="contact-channel-action">
+                <span>Conectar no LinkedIn</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </div>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/SPACEzinxl" target="_blank" rel="noopener noreferrer" class="contact-channel-card" id="contact-github-card">
+              <div class="contact-channel-top">
+                <div class="contact-channel-icon github-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </div>
+                <span class="contact-channel-badge badge-code">Repositórios</span>
+              </div>
+              <h3 class="contact-channel-title">GitHub</h3>
+              <p class="contact-channel-desc">Veja meus códigos, contribuições, commits e projetos de código aberto.</p>
+              <div class="contact-channel-val">github.com/SPACEzinxl</div>
+              <div class="contact-channel-action">
+                <span>Explorar GitHub</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé do Site -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#inicio" class="footer-brand">
+          <span class="brand-bracket">&lt;</span>
+          <span>Samuel.dev</span>
+          <span class="brand-bracket">/&gt;</span>
+        </a>
+        <p class="footer-desc">
+          Desenvolvido com foco em código limpo, alta performance e arquitetura de excelência.
+        </p>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-socials">
+          <a href="https://github.com/SPACEzinxl" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/samuel-fernando-71b187258/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://wa.me/5511981725760" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WhatsApp</a>
+          <a href="mailto:samuelfernandoa98125760@gmail.com" aria-label="E-mail">E-mail</a>
+        </div>
+        <p class="copyright">
+          &copy; <span id="current-year">2026</span> Samuel Fernando. Todos os direitos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante Voltar ao Topo -->
+  <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo da página" title="Voltar ao topo">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Modal Interativo de Detalhes do Projeto -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <button class="modal-close" id="modal-close-btn" aria-label="Fechar modal">&times;</button>
+      
+      <div class="modal-body">
+        <div class="modal-image-wrapper" id="modal-media-wrapper">
+          <img src="" alt="Prévia do Projeto" id="modal-img" class="modal-img" />
+          <video id="modal-video" class="modal-img" controls style="display:none; width:100%; border-radius: 12px;" preload="metadata">
+            <source src="" type="video/mp4" id="modal-video-src" />
+            Seu navegador não suporta a reprodução de vídeo.
+          </video>
+        </div>
+        <div id="modal-gallery" class="modal-gallery" style="display: none;"></div>
+        
+        <div class="modal-info">
+          <div class="modal-tags" id="modal-tags"></div>
+          <h3 class="modal-title" id="modal-title">Título do Projeto</h3>
+          
+          <div class="modal-section">
+            <h4>Visão Geral & Problema</h4>
+            <p id="modal-overview"></p>
+          </div>
+
+          <div class="modal-section">
+            <h4>Desafios Técnicos & Soluções</h4>
+            <p id="modal-challenges"></p>
+          </div>
+
+          <div class="modal-section">
+            <h4>Tecnologias & Arquitetura</h4>
+            <ul class="modal-feature-list" id="modal-features"></ul>
+          </div>
+
+          <div class="modal-actions">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modal-live-link">
+              <span>Acessar Demonstração</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="modal-github-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>Repositório GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Interativo de Visualização de Certificado -->
+  <div class="modal-backdrop" id="cert-modal" aria-hidden="true" role="dialog" aria-labelledby="cert-modal-title">
+    <div class="modal-dialog cert-modal-dialog">
+      <div class="cert-modal-header">
+        <div class="cert-modal-title-group">
+          <div class="cert-modal-icon">🎓</div>
+          <div>
+            <span class="cert-modal-eyebrow">Certificado Profissional</span>
+            <h3 class="cert-modal-title" id="cert-modal-title">Nome do Certificado</h3>
+          </div>
+        </div>
+
+        <div class="cert-modal-actions">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" id="cert-modal-open-link" title="Abrir arquivo PDF em tela cheia">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            <span>Tela Cheia</span>
+          </a>
+          <a href="#" download class="btn btn-primary btn-sm" id="cert-modal-download-link" title="Baixar certificado no seu dispositivo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Baixar PDF</span>
+          </a>
+          <button class="modal-close" id="cert-modal-close-btn" aria-label="Fechar visualizador de certificado">&times;</button>
+        </div>
+      </div>
+      
+      <div class="cert-modal-body">
+        <div class="cert-iframe-container" id="cert-iframe-container">
+          <iframe src="" id="cert-modal-iframe" class="cert-modal-iframe" title="Documento do Certificado"></iframe>
+        </div>
+        <div class="cert-modal-fallback" id="cert-modal-fallback">
+          <p>Visualizando no celular ou navegador sem suporte nativo a PDF embutido?</p>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="cert-modal-fallback-btn">
+            Abrir PDF Diretamente
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
