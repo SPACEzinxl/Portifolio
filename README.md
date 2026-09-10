@@ -42,7 +42,7 @@ Como é um projeto puramente *front-end* (HTML, CSS e JS puros), não é necess�
 1. Acesse o link abaixo:
    ```bash
    
-   ```https://spacezinxl.github.io/Portifolio/
+   https://spacezinxl.github.io/Portifolio/
 
 ## 📫 Contato
 
